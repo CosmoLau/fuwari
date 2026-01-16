@@ -13,7 +13,8 @@
     "new-post": "node scripts/new-post.js",
     "format": "biome format --write ./src",
     "lint": "biome check --write ./src",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "npx playwright install"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",
@@ -52,6 +53,7 @@
     "remark-directive-rehype": "^0.4.2",
     "remark-github-admonitions-to-directives": "^1.0.5",
     "remark-math": "^6.0.0",
+    "remark-mermaidjs": "^7.0.0",
     "remark-sectionize": "^2.1.0",
     "sanitize-html": "^2.17.0",
     "sharp": "^0.34.5",
@@ -69,6 +71,7 @@
     "@types/markdown-it": "^14.1.2",
     "@types/mdast": "^4.0.4",
     "@types/sanitize-html": "^2.16.0",
+    "playwright": "^1.57.0",
     "postcss-import": "^16.1.1",
     "postcss-nesting": "^13.0.2"
   },
